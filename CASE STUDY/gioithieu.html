@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+        
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>Thegioididong.com là thương hiệu thuộc Công ty Cổ phần Thế giới di động,
+                   tên tiếng Anh là Mobile World JSC, (mã chứng Khoán: MWG) là một tập đoàn bán lẻ tại Việt Nam với lĩnh vực kinh doanh chính là bán lẻ điện thoại di động, 
+                   thiết bị số và điện tử tiêu dùng.Theo nghiên cứu của EMPEA, thống kê thị phần bán lẻ điện thoại di động 
+                   tại Việt Nam năm 2014 thì Thế giới di động hiện chiếm 25% và là doanh nghiệp lớn nhất trong lĩnh vực của mình.
+                </p>
+                <br />
+                <p>
+                    Năm 2018, Thế giới Di Động lọt top 100 nhà bán lẻ lớn nhất khu vực châu Á - Thái Bình Dương.<br/>
+                    Ngoài chuỗi cửa hàng điện thoại di động thegioididong.com, 
+                    Công ty Cổ phần Thế giới di động còn sở hữu chuỗi cửa hàng điện máy Điện máy Xanh, Trần Anh và chuỗi siêu thị thực phẩm Bách hóa Xanh.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>
